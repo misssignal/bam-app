@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAM-Learning", "BAM-Learning\BAM-Learning.csproj", "{D045AAB2-E3F4-4462-AE71-DB85DBAA0388}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D045AAB2-E3F4-4462-AE71-DB85DBAA0388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D045AAB2-E3F4-4462-AE71-DB85DBAA0388}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D045AAB2-E3F4-4462-AE71-DB85DBAA0388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D045AAB2-E3F4-4462-AE71-DB85DBAA0388}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9D90834-670D-493D-955F-56D10172DD4C}
+	EndGlobalSection
+EndGlobal
