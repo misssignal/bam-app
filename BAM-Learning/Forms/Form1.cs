@@ -53,6 +53,7 @@ namespace BAM_Learning
                         {
                             Array bla = line.Split(":");
                             Console.WriteLine(bla);
+                            Console.WriteLine("At end of CountLinesAsync");
                         }
                         count++;
                     }
@@ -90,7 +91,13 @@ namespace BAM_Learning
                 }
             }
             Console.WriteLine(size); // <-- Shows file size in debugging mode.
-            Console.WriteLine(result); // <-- For debugging use.
+            Console.WriteLine(result); // <-- For debugging use
+
+        }
+
+        private void GetDBData()
+        {
+            string connection = ""
         }
     }
 }

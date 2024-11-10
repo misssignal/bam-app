@@ -12,8 +12,8 @@ namespace BAM_Learning.Helpers
         // Progress Bar
         private async Task ProcessFilesAsync(string[] files)
         {
-            progressBar1.Maximum = files.Length;
-            progressBar1.Value = 0;
+            //progressBar1.Maximum = files.Length;
+            //progressBar1.Value = 0;
 
             for (int i = 0; i < files.Length; i++)
             {
@@ -21,10 +21,10 @@ namespace BAM_Learning.Helpers
                 ProcessFile(files[i]);
 
                 // Update the progress bar
-                progressBar1.Value = i + 1;
+                //progressBar1.Value = i + 1;
 
                 // Optionally update a label to show progress
-                labelProgress.Text = $"Processed {i + 1}/{files.Length} files";
+                //labelProgress.Text = $"Processed {i + 1}/{files.Length} files";
             }
 
             MessageBox.Show("Processing Complete!");
@@ -50,13 +50,13 @@ namespace BAM_Learning.Helpers
         {
             public LoadingForm()
             {
-                InitializeComponent();
+                //InitializeComponent();
             }
 
             public void UpdateProgress(int progress, string status)
             {
-                progressBar1.Value = progress;
-                labelStatus.Text = status;
+                //progressBar1.Value = progress;
+                //labelStatus.Text = status;
             }
         }
         // Main form code
@@ -84,7 +84,7 @@ namespace BAM_Learning.Helpers
             MessageBox.Show("All files processed!");
         }
 
-        private async void btnStartProcessing_Click(object sender, EventArgs e)
+        private async void btnStartProcessing1_Click(object sender, EventArgs e)
         {
             string[] files = Directory.GetFiles("path_to_your_files");
             await ProcessFilesWithLoadingFormAsync(files); // Process files with a loading form
@@ -113,8 +113,8 @@ namespace BAM_Learning.Helpers
             worker.ProgressChanged += (s, ev) =>
             {
                 // Update the progress bar
-                progressBar1.Value = ev.ProgressPercentage;
-                labelProgress.Text = $"Processed {ev.ProgressPercentage}%";
+                //progressBar1.Value = ev.ProgressPercentage;
+                //labelProgress.Text = $"Processed {ev.ProgressPercentage}%";
             };
 
             worker.RunWorkerCompleted += (s, ev) =>
@@ -122,7 +122,7 @@ namespace BAM_Learning.Helpers
                 MessageBox.Show("Processing Complete!");
             };
 
-            worker.RunWorkerAsync(files);
+            //worker.RunWorkerAsync(files);
 
         }
 

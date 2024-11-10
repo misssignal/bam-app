@@ -57,12 +57,12 @@ namespace BAM_Learning.Helpers
             }
         }
 
-        public DataSet GenerateDataSet(MyClass source)
+        public DataSet GenerateDataSet(ClsBinaryFileConverter source)
         {
             return GenerateDataSet(new[] { source });
         }
 
-        public DataSet GenerateDataSet(IEnumerable<MyClass> source)
+        public DataSet GenerateDataSet(IEnumerable<ClsBinaryFileConverter> source)
         {
             DataSet ds = new DataSet();
             DataTable dt = new DataTable();
@@ -70,11 +70,11 @@ namespace BAM_Learning.Helpers
             dt.Columns.Add("Name");
             dt.Columns.Add("Id", typeof(int));
             // other columns...
-            foreach (MyClass c in source)
+            foreach (ClsBinaryFileConverter c in source)
             {
                 DataRow dr = dt.Rows.Add();
-                dr.SetField("Name", c.Name);
-                dr.SetField("Id", c.Id);
+                //dr.SetField("Name", c.Name);
+                //dr.SetField("Id", c.Id);
                 // other properties
             }
             return ds;

@@ -1,6 +1,6 @@
 ﻿namespace BAM_Learning.Forms
 {
-    partial class BaseCSVForm
+    partial class BaseCSVForm : Form1
     {
         /// <summary>
         /// Required designer variable.

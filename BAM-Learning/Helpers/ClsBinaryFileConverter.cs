@@ -8,11 +8,9 @@ namespace BAM_Learning.Helpers
 {
     internal class ClsBinaryFileConverter
     {
-        using System;
-using System.IO;
-using System.Text;
 
-public class BinaryFileConverter
+    }
+    public class BinaryFileConverter
     {
         public void ConvertBinaryFile(string binaryFilePath, string outputFolderPath)
         {
@@ -64,4 +62,4 @@ public class BinaryFileConverter
     }
 
 }
-}
+

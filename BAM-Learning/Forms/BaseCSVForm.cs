@@ -17,7 +17,7 @@ namespace BAM_Learning
 
         public BaseCsvForm()
         {
-            InitializeComponent();
+            //InitializeComponent();
             dataGridView = new DataGridView
             {
                 Dock = DockStyle.Fill,
@@ -36,8 +36,8 @@ namespace BAM_Learning
         protected override void LoadCsvData()
         {
             // Your logic to load data from CSV 1 and populate the DataGridView
-            List<Channel> csvData = LoadCsv1();  // Assuming you have a method for loading CSV 1
-            dataGridView.DataSource = csvData;
+            //List<Channel> csvData = LoadCsv1();  // Assuming you have a method for loading CSV 1
+            //dataGridView.DataSource = csvData;
         }
     }
 
@@ -46,8 +46,8 @@ namespace BAM_Learning
         protected override void LoadCsvData()
         {
             // Your logic to load data from CSV 2 and populate the DataGridView
-            List<Channel> csvData = LoadCsv2();  // Assuming you have a method for loading CSV 2
-            dataGridView.DataSource = csvData;
+            //List<Channel> csvData = LoadCsv2();  // Assuming you have a method for loading CSV 2
+            //dataGridView.DataSource = csvData;
         }
     }
 

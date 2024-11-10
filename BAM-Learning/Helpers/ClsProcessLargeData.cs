@@ -37,7 +37,7 @@ namespace BAM_Learning.Helpers
 
         // Streamwriter
 
-        public void streaming()
+/*        public void streaming()
         {
             using (StreamWriter writer = new StreamWriter(outputFilePath))
             {
@@ -47,7 +47,7 @@ namespace BAM_Learning.Helpers
                 }
             }
 
-        }
+        }*/
 
     }
 }
